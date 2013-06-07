@@ -21,6 +21,8 @@ speedups = Feature(
         Extension(
             'scss._speedups',
             sources=['scss/src/_speedups.c', 'scss/src/block_locator.c', 'scss/src/scanner.c'],
+	    include_dirs = ['/usr/local/include', '/opt/local/include'],
+	    library_dirs=['/usr/local/lib', '/opt/local/lib'],
             libraries=['pcre']
         ),
     ],
